@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import "./assets/css/index.css";
 import Experience from "./pages/Experience/Experience";
@@ -28,7 +29,8 @@ export default function App() {
         </>
       ) : (
         // Router Mode: Use routes for navigation
-        <Routes>`
+        <Routes>
+          `
           <Route path="/" element={<Hero />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />

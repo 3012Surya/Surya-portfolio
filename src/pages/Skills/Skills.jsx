@@ -1,36 +1,26 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "@/components/globe";
-import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
-import {
-  FaReact,
-  FaNodeJs,
-  FaPython,
-  FaDocker,
-  FaGitAlt,
-  FaLinux,
-  FaFigma,
-  FaAws,
-} from "react-icons/fa";
+import { Code2, Paintbrush, Cpu } from "lucide-react";
+import { FaReact, FaPython, FaGitAlt, FaLinux } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiTypescript,
   SiTailwindcss,
-  SiPostgresql,
-  SiMongodb,
-  SiGraphql,
   SiJest,
   SiWebpack,
   SiRedux,
   SiFirebase,
   SiVercel,
   SiVite,
+  SiApachespark,
 } from "react-icons/si";
-import { TbBrandVscode } from "react-icons/tb";
-import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
+import { BsFileEarmarkCode } from "react-icons/bs";
 import { MdAnimation } from "react-icons/md";
-import { FcWorkflow } from "react-icons/fc";
+import { TbBrandVscode } from "react-icons/tb";
 
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
   <Card className="group relative overflow-hidden bg-gray-900/80 border-gray-700 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
@@ -95,73 +85,18 @@ const SkillsSection = () => {
       ],
     },
     {
-      icon: Database,
+      icon: Code2,
       title: "Backend Development",
       color: "text-green-400",
       skills: [
-        {
-          name: "Node.js",
-          icon: <FaNodeJs className="w-4 h-4 text-[#339933]" />,
-        },
         {
           name: "Python",
           icon: <FaPython className="w-4 h-4 text-[#3776AB]" />,
         },
         {
-          name: "PostgreSQL",
-          icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
+          name: "PySpark",
+          icon: <SiApachespark className="w-4 h-4 text-[#E25A1C]" />,
         },
-        {
-          name: "MongoDB",
-          icon: <SiMongodb className="w-4 h-4 text-[#47A248]" />,
-        },
-        {
-          name: "REST APIs",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" />,
-        },
-        {
-          name: "GraphQL",
-          icon: <SiGraphql className="w-4 h-4 text-[#E10098]" />,
-        },
-      ],
-    },
-    {
-      icon: Layout,
-      title: "UI/UX Design",
-      color: "text-purple-400",
-      skills: [
-        { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
-        {
-          name: "Responsive Design",
-          icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
-        },
-        {
-          name: "Wireframing",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" />,
-        },
-        {
-          name: "Prototyping",
-          icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" />,
-        },
-      ],
-    },
-    {
-      icon: Cloud,
-      title: "Cloud & DevOps",
-      color: "text-orange-400",
-      skills: [
-        { name: "AWS", icon: <FaAws className="w-4 h-4 text-[#FF9900]" /> },
-        {
-          name: "Docker",
-          icon: <FaDocker className="w-4 h-4 text-[#2496ED]" />,
-        },
-        { name: "CI/CD", icon: <FcWorkflow className="w-4 h-4" /> },
-        {
-          name: "Kubernetes",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#326CE5]" />,
-        },
-        { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
-        { name: "Linux", icon: <FaLinux className="w-4 h-4 text-[#FCC624]" /> },
       ],
     },
     {
@@ -185,6 +120,8 @@ const SkillsSection = () => {
         },
         { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
         { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
+        { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
+        { name: "Linux", icon: <FaLinux className="w-4 h-4 text-[#FCC624]" /> },
       ],
     },
     {
@@ -218,10 +155,10 @@ const SkillsSection = () => {
       <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none"></div>
 
       <section className="container mx-auto px-4 py-11 relative z-10">
-        <div className="flex justify-center items-center ">
+        <div className="flex justify-center items-center">
           <IconCloudDemo />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {skillCategories.map((category, index) => (
             <SkillCard
               key={index}

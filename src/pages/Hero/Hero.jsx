@@ -42,31 +42,29 @@ const GridBackground = () => {
 
 export default function Hero() {
   const words = [
-    "Full-Stack Developer & UI/UX Enthusiast",
-    "JavaScript Developer & Creator of Olova.js",
-    "Learning MARN Stack",
-    "Linux & GitHub for DevOps Enthusiast",
+    "Full-Stack Developer",
+    "JavaScript Developer ",
+    "Learning Type Script",
   ];
 
   const [code] = useState(`
 const profile = {
-    name: 'Nazmul Hossain',
-    title: 'Full-Stack Developer | Cloud Enthusiast | Problem Solver',
+    name: 'D Suryanarayna Reddy',
+    title: 'Full-Stack Developer  Problem Solver',
     skills: [
-        'React', 'NextJS', 'Redux', 'Express',
-        'MySQL', 'MongoDB', 'Docker', 'AWS', 'TypeScript',
-        'GraphQL', 'Git', 'Linux', 'Discord Development'
+        "HTML","CSS","Tailwind CSS",
+        "JavaScript","React","Redux"
     ],
     hardWorker: true,
     quickLearner: true,
     problemSolver: true,
-    yearsOfExperience: 4, 
+    yearsOfExperience: 1, 
     hireable: function() {
         return (
             this.hardWorker &&
             this.problemSolver &&
             this.skills.length >= 5 &&
-            this.yearsOfExperience >= 3
+            this.yearsOfExperience >= 1
         );
     }
 };
@@ -190,7 +188,7 @@ const profile = {
                     I&apos;m
                     <span className="typing-effect gradient-text">
                       {" "}
-                      Nazmul Hossain
+                      D SUryanarayana Reddy
                     </span>
                   </span>
                 </h1>
@@ -211,8 +209,7 @@ const profile = {
               {/* Description */}
               <div className="relative mb-8 sm:mb-12 max-w-xl">
                 <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                  JavaScript lover 🚀 | OlovaJS creator 🔧 | Crafting frameworks
-                  and coding the future 💻✨
+                  JavaScript lover 🚀 | Coding the future 💻✨
                 </p>
               </div>
 

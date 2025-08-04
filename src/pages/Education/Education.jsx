@@ -1,13 +1,6 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import EducationLoader from "@/components/ui/EducationLoader";
-import {
-  Star,
-  Award,
-  Calendar,
-  BookOpen,
-  GraduationCap,
-  Trophy,
-} from "lucide-react";
+import { Award, Calendar, BookOpen, Trophy } from "lucide-react";
 import { motion } from "framer-motion";
 
 const EducationSection = () => {
@@ -15,24 +8,34 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
-      mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+      degree: "Bachelor of Technology (B.Tech)",
+      school: "REVA UNIVERSITY, Bengaluru",
+      mascot: "🎓",
+      year: "June 2023",
+      achievements: ["CGPA: 8.41", "Branch: Electronics & Communication (ECE)"],
+      skills: ["HTML", "JavaScript", "Python", "VLSI", "DSP"],
       description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+        "Completed a rigorous 4-year program focusing on modern web development, electronics theory, and digital design, with hands-on project experience.",
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
-      mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      degree: "Pre-University (Class 12)",
+      school: "YJR PU College, Gangavathi",
+      mascot: "📘",
+      year: "March 2019",
+      achievements: ["Percentage: 85%", "Stream: PCMB"],
+      skills: ["Physics", "Chemistry", "Mathematics", "Biology"],
       description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+        "Built a strong foundation in science and mathematics, excelling in theoretical and practical subjects during pre-university education.",
+    },
+    {
+      degree: "Secondary School Certificate (Class 10)",
+      school: "Duddupudi High School, Sindhanur",
+      mascot: "📗",
+      year: "April 2017",
+      achievements: ["Percentage: 93.12%"],
+      skills: ["Mathematics", "Science", "Social Science", "English"],
+      description:
+        "Achieved academic excellence at the secondary level, with distinction in science and mathematics subjects.",
     },
   ];
 
@@ -67,7 +70,7 @@ const EducationSection = () => {
         <div className="absolute inset-0 border border-white/[0.05] grid grid-cols-2 md:grid-cols-4" />
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 relative z-10">
+      <div className="max-w-[1600px] mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -87,13 +90,13 @@ const EducationSection = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {educationData.map((edu, index) => (
             <motion.div
               key={index}
               variants={cardVariants}
-              className={`relative border rounded-xl p-8 transition-all duration-300 bg-gray-900/50 backdrop-blur-sm ${
+              className={`relative border rounded-xl p-6 transition-all duration-300 bg-gray-900/50 backdrop-blur-sm ${
                 hoveredIndex === index
                   ? "border-teal-500 scale-[1.02]"
                   : "border-blue-400/20"
@@ -101,7 +104,7 @@ const EducationSection = () => {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <span className="text-3xl">{edu.mascot}</span>
@@ -123,7 +126,7 @@ const EducationSection = () => {
                   {edu.description}
                 </p>
 
-                <div className="space-y-3">
+                <div className="space-y-2">
                   <h4 className="text-sm font-semibold text-white flex items-center gap-2">
                     <Trophy className="w-4 h-4 text-yellow-500" />
                     Key Achievements
@@ -141,15 +144,21 @@ const EducationSection = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap gap-2">
-                  {edu.skills.map((skill, i) => (
-                    <span
-                      key={i}
-                      className="px-2 py-1 text-xs rounded bg-blue-500/10 text-blue-300"
-                    >
-                      {skill}
-                    </span>
-                  ))}
+                <div className="space-y-1 mt-3">
+                  <h4 className="text-sm font-semibold text-white flex items-center gap-2">
+                    <BookOpen className="w-4 h-4 text-blue-400" />
+                    Courses:
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {edu.skills.map((skill, i) => (
+                      <span
+                        key={i}
+                        className="px-2 py-1 text-xs rounded bg-blue-500/10 text-blue-300"
+                      >
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </motion.div>
