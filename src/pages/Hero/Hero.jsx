@@ -188,7 +188,7 @@ const profile = {
                     I&apos;m
                     <span className="typing-effect gradient-text">
                       {" "}
-                      D SUryanarayana Reddy
+                      D Suryanarayana Reddy
                     </span>
                   </span>
                 </h1>

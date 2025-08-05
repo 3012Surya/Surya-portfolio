@@ -23,7 +23,7 @@ Welcome to my **personal portfolio website**! I'm **D Suryanarayana Reddy**, and
 
 ## 🌟 Screenshot
 
-![Portfolio Preview](https://i.postimg.cc/Dfr5jCQp/Screenshot-2025-01-02-120901.png)
+![Portfolio Preview](https://github.com/user-attachments/assets/70ff4ccb-0d9c-4013-b457-d5f10a685bad)
 
 ---
 
