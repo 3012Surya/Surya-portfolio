@@ -29,7 +29,7 @@ Welcome to my **personal portfolio website**! I'm **D Suryanarayana Reddy**, and
 
 ## 📁 Project Structure
 
-```bash
+````bash
 portfolio/
 ├── node_modules/
 ├── public/
@@ -60,9 +60,6 @@ portfolio/
 │   ├── tailwind.config.js
 │   └── vite.config.js
 
-```
-
----
 
 ## Sections of the Portfolio
 
@@ -95,7 +92,7 @@ You will need to download **Git** and **Node** to run this project.
 - Verify the installation:
   ```bash
   git --version
-  ```
+````
 
 ### Node
 
