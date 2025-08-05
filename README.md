@@ -1,32 +1,34 @@
-# Portfolio Website
+# D Suryanarayana Reddy | Portfolio Website
+
 <div align="center">
   <pre>
-    _____           _    __      _ _       
-   |  __ \         | |  / _|    | (_)      
-   | |__) |__  _ __| |_| |_ ___ | |_  ___  
-   |  ___/ _ \| '__| __|  _/ _ \| | |/ _ \ 
-   | |  | (_) | |  | |_| || (_) | | | (_) |
-   |_|   \___/|_|   \__|_| \___/|_|_|\___/ 
+    ____   ____                       _           _   _                          
+   |  _ \ |  _ \ ___ _ __   ___  _ __| |__   ___ | |_| |__   ___  _ __  ___  ___ 
+   | | | || |_) / _ \ '_ \ / _ \| '__| '_ \ / _ \| __| '_ \ / _ \| '_ \/ __|/ _ \
+   | |_| ||  _ <  __/ |_) | (_) | |  | | | | (_) | |_| | | | (_) | | | \__ \  __/
+   |____(_)_| \_\___| .__/ \___/|_|  |_| |_|\___/ \__|_| |_|\___/|_| |_|___/\___|
+                   |_|                                                          
   </pre>
 </div>
 
- 
-Welcome to my **portfolio website**! This site showcases my skills, experience, education, projects, and how to get in touch with me. It's built with **React** and **Vite** for a fast, modern web experience. You can explore my work, learn about my journey, and contact me directly.
+Welcome to my **personal portfolio website**! I'm **D Suryanarayana Reddy**, and this site serves as a digital snapshot of who I am, what I’ve done, and where I’m heading. From my professional journey to my skills, education, and favorite projects, everything is structured in a clean, responsive, and animated web experience using **React** and **Vite**.
 
 ---
 
-## Demo
+## 🔗 Live Demo
 
-![Portfolio Demo](https://i.postimg.cc/Dfr5jCQp/Screenshot-2025-01-02-120901.png)
+[**🌐 Click here to view my Portfolio**](https://your-vercel-deployment-url.vercel.app)
 
 ---
 
-## Live Preview
+## 🌟 Screenshot
 
-Check out the live preview of the portfolio website here:  
-[**Live Demo**](https://codervai.vercel.app/)
+![Portfolio Preview](https://i.postimg.cc/Dfr5jCQp/Screenshot-2025-01-02-120901.png)
+
 ---
-### 🎯 Project Structure
+
+## 📁 Project Structure
+
 ```bash
 portfolio/
 ├── node_modules/
@@ -34,71 +36,32 @@ portfolio/
 ├── src/
 │   ├── assets/
 │   │   ├── css/
-│   │   │   ├── index.css
-│   │   │   └── tomorrow.css
 │   │   └── images/
 │   ├── components/
 │   │   ├── ui/
 │   │   │   ├── Reusable Components/
-│   │   │   │   ├── badge.jsx
-│   │   │   │   ├── button.jsx
-│   │   │   │   ├── card.jsx
-│   │   │   │   ├── EducationLoader.jsx
-│   │   │   │   ├── evervault-card.jsx
-│   │   │   │   ├── flip-words.jsx
-│   │   │   │   ├── icon-cloud.jsx
-│   │   │   │   ├── meteors.jsx
-│   │   │   │   ├── sparkles-text.jsx
-│   │   │   │   └── tooltip.jsx
-│   │   │   │
 │   │   │   ├── Main Components/
-│   │   │   │   ├── AnimatedGrid.jsx
-│   │   │   │   ├── Contact.jsx
-│   │   │   │   ├── Education.jsx
-│   │   │   │   ├── enhanced-portfolio-card.jsx
-│   │   │   │   ├── Experience.jsx
-│   │   │   │   ├── global.jsx
-│   │   │   │   ├── Header.jsx
-│   │   │   │   ├── Hero.jsx
-│   │   │   │   ├── Home.jsx
-│   │   │   │   ├── PortfolioPage.jsx
-│   │   │   │   ├── Projects.jsx
-│   │   │   │   └── Skills.jsx
 │   │   └── lib/
-│   │       └── utils.js
 │   ├── pages/
 │   │   ├── About/
-│   │   │   └── About.jsx
 │   │   ├── Contact/
-│   │   │   └── Contact.jsx
 │   │   ├── Experience/
-│   │   │   └── Experience.jsx
 │   │   ├── Header/
-│   │   │   └── Header.jsx
 │   │   ├── Hero/
-│   │   │   └── Hero.jsx
 │   │   ├── Projects/
-│   │   │   ├── Projects.jsx
-│   │   │   └── testProjects.jsx
 │   │   └── Skills/
-│   │       └── Skills.jsx
 │   ├── App.jsx
 │   └── main.jsx
 ├── Configuration Files/
 │   ├── .eslintrc.js
 │   ├── .gitignore
-│   ├── components.json
 │   ├── index.html
-│   ├── jsconfig.json
-│   ├── package-lock.json
 │   ├── package.json
-│   ├── postcss.config.js
-│   ├── README.md
 │   ├── tailwind.config.js
-│   ├── vercel.json
 │   └── vite.config.js
 
 ```
+
 ---
 
 ## Sections of the Portfolio
@@ -115,13 +78,12 @@ The portfolio website consists of the following sections:
 ---
 
 ## 💻 Technologies Used
-- **Frontend:** React.js with Vite
-- **Styling:** Tailwind CSS
-- **Animations:** Framer Motion
-- **Icons:** React Icons
-- **Deployment:** Vercel
 
----
+**Frontend**: React.js + Vite
+**Styling**: Tailwind CSS
+**Animation**:Framer Motion
+**Icon**: React Icons
+**Deployment**: Vercel
 
 ## Installation ⬇️
 
@@ -147,26 +109,31 @@ You will need to download **Git** and **Node** to run this project.
 # Getting Started 🎯
 
 ### Fork and Clone the Repository 🚀
+
 1. Click the **Fork** button at the top-right corner of the page to create your own copy of the repository.
 2. After forking, open your terminal and run the following commands to clone the repo:
 
-  ```bash
-  git clone https://github.com/seraprogrammer/portfolio.git
-  ```
+```bash
+git clone https://github.com/seraprogrammer/portfolio.git
+```
+
 Navigate to the Project Directory 📂
 Once the repository is cloned, change your directory to the project folder:
+
 ```bash
 cd portfolio
 ```
 
 Install Dependencies ⚙️
 From the root directory of your project, install the necessary packages:
+
 ```bash
 npm install
 ```
 
 Run the Development Server 🚀
 Start the development server to see your project live:
+
 ```bash
 npm run dev
 ```
@@ -175,6 +142,7 @@ View the Project 🌐
 Open your browser and visit http://localhost:5173/ to see the result! 🎉
 
 ## 📝 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
@@ -189,5 +157,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-<div align="center"> Made with ❤️ by Nazmul Hossain </div>
-
+<div align="center"> Made by D Suryanarayana Reddy</div>
