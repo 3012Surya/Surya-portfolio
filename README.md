@@ -15,9 +15,9 @@ Welcome to my **personal portfolio website**! I'm **D Suryanarayana Reddy**, and
 
 ---
 
-## 🔗 Live Demo
+## 🌐 Live Demo
 
-[**🌐 Click here to view my Portfolio**](https://your-vercel-deployment-url.vercel.app)
+👉 [Click here to view the live site](https://surya-portfolio.vercel.app)
 
 ---
 
